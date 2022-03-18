@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Analyzer</title>
+</head>
+
+<body>
+    <div class="app">
+        <section id="index" class="hidden">
+            <div class="content">
+                <div class="logo"></div>
+                <form>
+                    <textarea id="article" placeholder="Enter your article here.*" required></textarea>
+                    <button id="submit" class="default__btn">Analyze</button>
+                </form>
+            </div>
+        </section>
+        <section id="results">
+            <div class="content">
+                <button id="back" class="secundary__btn"><span class="material-icons">arrow_back</span>Back</button>
+            
+                <h2>Results</h2>
+
+                <ul class="tag__list">
+                    <li id="score" class="tag">Strong Positive</li>
+                    <li id="agreement" class="tag">Agreement</li>
+                    <li id="subjetivity" class="tag">Objective</li>
+                    <li id="confidence" class="tag">Confidence: 100%</li>
+                    <li id="irony" class="tag">Non Ironic</li>
+                </ul>
+                <div class="marks">
+                    <span class="positive">Lorem this is green ipsum dolor sit amet consectetur adipisicing elit.</span> At, expedita dolorem eum odit, voluptatem ipsum laudantium dolorum commodi cupiditate dolor quae blanditiis. Ea dicta possimus natus labore facilis, <snap class="neutral">consequuntur repudiandae.</snap>
+                    Lorem, <span class="negative">ipsum dolor sit amet consectetur adipisicing elit.</span> Pariatur minima temporibus, sequi nam hic ducimus vero, <span class="strong__positive">rerum animi nostrum nulla a repellendus cupiditate.</span> Consequatur vel incidunt consectetur illo quod cupiditate?
+                </div>
+            
+                <div class="score__list">
+                    <div class="strong__positive">
+                        <h4>😀 Strong positive</h4>
+                        <div>Confidence: <span class="score">98%</span></div>
+                    </div>
+                    <div class="positive">
+                        <h4>🙂 Positive</h4>
+                        <div>Confidence: <span class="score">88%</span></div>
+                    </div>
+                    <div class="neutral">
+                        <h4>😐 Neutral</h4>
+                        <div>Confidence: <span class="score">80%</span></div>
+                    </div>
+                    <div class="negative">
+                        <h4>😠 Negative</h4>
+                        <div>Confidence: <span class="score">100%</span></div>
+                    </div>
+                    <div class="strong__negative">
+                        <h4>😡 Strong negative</h4>
+                        <div>Confidence: <span class="score">98%</span></div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+    </div>
+</body>
+
+</html>

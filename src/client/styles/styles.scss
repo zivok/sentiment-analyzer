@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.logo {
+    background-image: url("../views/images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 2rem auto;
+}
+
+section {
+
+    padding: 1rem;
+
+    &:nth-child(1) {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        height: 100vh;
+        min-height: 600px;
+
+        .content {
+            width: 100%;
+        }
+    }
+
+    &:nth-child(2) {
+        background-color: rgb(243, 243, 243);
+
+    }
+}
+
+form {
+    text-align: center;
+    width: 100%;
+
+    textarea {
+        width: 100%;
+        max-width: 600px;
+        min-height: 150px;
+        max-height: 300px;
+    }
+
+    button {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.marks {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    line-height: 28px;
+    font-size: 1.2rem;
+
+    span {
+        line-height: 28px;
+        font-size: 1.2rem;
+    }
+}
+
+
+.score {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.score__list {
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    > div {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.strong__positive {
+        background-color: greenyellow; 
+}
+
+.positive {
+    background-color: yellow;
+}
+
+.neutral {
+    background-color: lightgrey;
+}
+
+.negative {
+    background-color: orange;
+}
+
+.strong__negative {
+    background-color: red;
+    color: white;
+}
+
+.tag__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .tag {
+        padding: .5rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        background-color: white;
+    }
+}
+
+@media (min-width: 900px) {
+    .app {
+        display: grid;
+        grid-template-columns: minmax(500px, 1fr) minmax(300px, 700px);
+        grid-template-rows: 1fr;
+    }
+
+    section {
+        
+        &:nth-child(1) {
+            display: flex !important;
+
+            .content {
+                max-width: 600px;
+                margin: auto;
+            }
+        }
+
+        &:nth-child(2) {
+            display: block !important;
+            height: 100vh;
+            overflow-y: scroll;
+
+            .content {
+                width: 90%;
+                margin: auto;
+            }
+
+            h2 {
+                display: none;
+            }
+        }
+    }
+
+    button {
+        &#back {
+            display: none;
+        }
+    }
+
+    .score__list {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        > div {
+            width: auto;
+            min-width: min-content;
+            margin-right: .5rem;
+
+        }
+    }
+}
